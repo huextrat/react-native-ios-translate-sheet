@@ -22,10 +22,6 @@
 - 🌐 Access to all languages supported by iOS translation
 - 📱 Native iOS UI and interactions
 
-## Requirements
-
-- iOS 17.4 or later
-
 ## Platform Compatibility
 
 This library is designed specifically for iOS 17.4 and above. It can be safely installed in your React Native project regardless of your target iOS version or if you're developing for Android. However, please note:
