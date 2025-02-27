@@ -21,6 +21,7 @@
 - 🔄 Seamless integration with iOS native translation capabilities
 - 🌐 Access to all languages supported by iOS translation
 - 📱 Native iOS UI and interactions
+- 🏗️ Supports old & new arch
 
 ## Platform Compatibility
 
@@ -71,6 +72,8 @@ function MyComponent() {
 
   const handleTranslate = () => {
     presentIOSTranslateSheet('Text to translate');
+    // Optional: You can pass an opacity value (0-1) as a second parameter
+    // presentIOSTranslateSheet('Text to translate', 0.5);
   };
 
   return (
@@ -83,6 +86,12 @@ function MyComponent() {
 ```
 
 Note: The translation sheet will only appear on iOS devices running version 17.4 or later. On other platforms or iOS versions below 17.4, the `presentIOSTranslateSheet` function will do nothing.
+
+## Example
+
+<center>
+<img src="./resources/demo.gif" width="200">
+</center>
 
 ## Contributing
 

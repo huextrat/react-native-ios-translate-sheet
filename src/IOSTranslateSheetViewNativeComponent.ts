@@ -6,10 +6,10 @@ import type {
 } from "react-native/Libraries/Types/CodegenTypes";
 import codegenNativeComponent from "react-native/Libraries/Utilities/codegenNativeComponent";
 
-export interface IOSTranslateSheetProps extends ViewProps {
+interface IOSTranslateSheetProps extends ViewProps {
   text: string;
   isPresented: boolean;
-  onHide?: DirectEventHandler<null>;
+  onHide: DirectEventHandler<null>;
   opacity?: WithDefault<Float, 0.0>;
 }
 

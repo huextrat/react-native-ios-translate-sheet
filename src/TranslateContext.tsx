@@ -16,8 +16,8 @@ export const IOSTranslateSheetProvider = ({
     presentIOSTranslateSheet,
     isIOSTranslateSheetPresented,
     text,
-    opacity,
     hideTranslateSheet,
+    opacity,
   } = useInternalTranslateSheet();
 
   return (
@@ -26,8 +26,8 @@ export const IOSTranslateSheetProvider = ({
         text={text}
         isPresented={isIOSTranslateSheetPresented}
         onHide={hideTranslateSheet}
-        opacity={opacity}
         style={styles.translateView}
+        opacity={opacity}
       />
       {children}
     </TranslateContext.Provider>
