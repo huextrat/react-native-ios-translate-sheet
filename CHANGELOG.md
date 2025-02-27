@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.1.1...v1.1.2) (2025-02-27)
+
+
+### Bug Fixes
+
+* setting a custom opacity is now working ([6e78905](https://github.com/huextrat/react-native-ios-translate-sheet/commit/6e789054dbce4b8fc0640adc05b3b680d12ddc19))
+
 ## [1.1.1](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.1.0...v1.1.1) (2025-02-27)
 
 
