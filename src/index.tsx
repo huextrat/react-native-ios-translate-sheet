@@ -1,3 +1,3 @@
 export { default as IOSTranslateSheet } from "./IOSTranslateSheetViewNativeComponent";
 export * from "./IOSTranslateSheetViewNativeComponent";
-export * from "./useTranslate";
+export * from "./TranslateContext";
