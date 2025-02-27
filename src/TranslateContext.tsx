@@ -1,7 +1,7 @@
 import { type ReactNode, createContext, useContext } from "react";
 import { StyleSheet } from "react-native";
 import IOSTranslateSheet from "./IOSTranslateSheetViewNativeComponent";
-import { useInternalTranslateSheet } from "./useTranslate";
+import { useInternalTranslateSheet } from "./hooks/useInternalTranslate";
 
 type TranslateContextType = {
   presentIOSTranslateSheet: (text: string, opacity?: number) => void;
@@ -9,7 +9,9 @@ type TranslateContextType = {
 
 const TranslateContext = createContext<TranslateContextType | null>(null);
 
-export const TranslateProvider = ({ children }: { children: ReactNode }) => {
+export const IOSTranslateSheetProvider = ({
+  children,
+}: { children: ReactNode }) => {
   const {
     presentIOSTranslateSheet,
     isIOSTranslateSheetPresented,
@@ -36,7 +38,7 @@ export const useIOSTranslateSheet = () => {
   const context = useContext(TranslateContext);
   if (!context) {
     throw new Error(
-      "useTranslateSheet must be used within a TranslateProvider",
+      "useIOSTranslateSheet must be used within a IOSTranslateSheetProvider",
     );
   }
   return context;

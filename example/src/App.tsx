@@ -1,13 +1,13 @@
 import { StyleSheet, View } from "react-native";
-import { TranslateProvider } from "react-native-ios-translate-sheet";
+import { IOSTranslateSheetProvider } from "react-native-ios-translate-sheet";
 import { Example } from "./Example";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <TranslateProvider>
+      <IOSTranslateSheetProvider>
         <Example />
-      </TranslateProvider>
+      </IOSTranslateSheetProvider>
     </View>
   );
 }

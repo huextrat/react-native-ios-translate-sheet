@@ -47,125 +47,42 @@ cd ios && pod install
 
 ## Usage
 
-### Using the Hook
+1. First, wrap your app (or the part where you want to use the translation sheet) with the `IOSTranslateSheetProvider`:
 
-For a more convenient implementation, you can use the provided `useIOSTranslateSheet` hook:
+```tsx
+import { IOSTranslateSheetProvider } from 'react-native-ios-translate-sheet';
 
-```jsx
-import React from 'react';
-import { View, Button, StyleSheet, Text } from 'react-native';
+function App() {
+  return (
+    <IOSTranslateSheetProvider>
+      {/* Your app content */}
+    </IOSTranslateSheetProvider>
+  );
+}
+```
+
+2. Then, use the `useIOSTranslateSheet` hook in any component where you want to trigger the translation sheet:
+
+```tsx
 import { useIOSTranslateSheet } from 'react-native-ios-translate-sheet';
 
-export default function App() {
-  const { presentIOSTranslateSheet, IOSTranslateSheetView } = useIOSTranslateSheet();
-  
+function MyComponent() {
+  const { presentIOSTranslateSheet } = useIOSTranslateSheet();
+
   const handleTranslate = () => {
-    presentIOSTranslateSheet('Hello world! This is a sample text to translate.');
+    presentIOSTranslateSheet('Text to translate');
   };
-  
+
   return (
-    <View style={styles.container}>
-      {/* Add the IOSTranslateSheetView component to your render tree */}
-      <IOSTranslateSheetView />
-      <Text style={styles.text}>
-        Press the button below to translate text
-      </Text>
-      <Button 
-        title="Translate Text" 
-        onPress={handleTranslate} 
-      />
-    </View>
+    <Button 
+      title="Translate" 
+      onPress={handleTranslate} 
+    />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: 20,
-  },
-  text: {
-    marginBottom: 20,
-    textAlign: 'center',
-  },
-});
 ```
 
-The `useIOSTranslateSheet` hook provides:
-
-- `presentIOSTranslateSheet(text)`: Function to show the translation sheet with the provided text
-- `IOSTranslateSheetView`: A pre-configured component that handles the translation UI
-- `isIOSTranslateSheetPresented`: Boolean state indicating if the translation sheet is currently visible
-
-This approach simplifies state management and allows you to trigger translations from anywhere in your component.
-
-### Basic Component Usage
-
-```jsx
-import React, { useState } from 'react';
-import { View, Button, StyleSheet } from 'react-native';
-import { IOSTranslateSheetView } from 'react-native-ios-translate-sheet';
-
-export default function App() {
-  const [isTranslateVisible, setTranslateVisible] = useState(false);
-  
-  return (
-    <View style={styles.container}>
-      <IOSTranslateSheetView
-        text="Hello world! This is a sample text to translate."
-        isPresented={isTranslateVisible}
-        opacity={0.1}
-        onHide={() => setTranslateVisible(false)}
-        style={styles.translateView}
-      />
-      <Button 
-        title="Translate Text" 
-        onPress={() => setTranslateVisible(true)} 
-      />
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  translateView: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-  },
-});
-```
-
-## Props
-
-| Prop | Type | Required | Description |
-|------|------|----------|-------------|
-| `text` | string | Yes | The text to be translated |
-| `isPresented` | boolean | Yes | Controls the visibility of the translation sheet |
-| `opacity` | number | No | Background opacity when the sheet is presented (0.0 - 1.0) |
-| `onHide` | function | No | Callback function triggered when the sheet is dismissed |
-| `style` | ViewStyle | No | Style for the container view |
-
-### Important Note on View Positioning
-
-> ⚠️ **Warning**: The `IOSTranslateSheetView` or `IOSTranslateSheetView` from the hook **must** cover the entire screen to work properly.
-
-This is necessary because:
-
-1. The native SwiftUI translation sheet requires a full-screen container to display correctly
-2. The component needs to overlay all other UI elements to ensure proper interaction
-3. The iOS translation sheet is presented modally on top of your app's content
-
-`<IOSTranslateSheetView />` from the `useIOSTranslateSheet` hook is an absolute full-screen view, so place it well on your component tree to ensure it covers the entire screen. A good practice is to place it at the root level of your app or screen component.
-
-If the view is not positioned correctly, the translation sheet may not appear or function as expected.
+Note: The translation sheet will only appear on iOS devices running version 17.4 or later. On other platforms or iOS versions below 17.4, the `presentIOSTranslateSheet` function will do nothing.
 
 ## Contributing
 
