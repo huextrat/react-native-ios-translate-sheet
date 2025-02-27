@@ -22,6 +22,7 @@
 - 🌐 Access to all languages supported by iOS translation
 - 📱 Native iOS UI and interactions
 - 🏗️ Supports old & new arch
+- ⚙️ Powered by SwiftUI's [translationPresentation](https://developer.apple.com/documentation/swiftui/view/translationpresentation(ispresented:text:attachmentanchor:arrowedge:replacementaction:)) API under the hood
 
 ## Platform Compatibility
 
