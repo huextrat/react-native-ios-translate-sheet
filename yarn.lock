@@ -3472,20 +3472,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/prop-types@npm:*":
-  version: 15.7.14
-  resolution: "@types/prop-types@npm:15.7.14"
-  checksum: d0c5407b9ccc3dd5fae0ccf9b1007e7622ba5e6f1c18399b4f24dff33619d469da4b9fa918a374f19dc0d9fe6a013362aab0b844b606cfc10676efba3f5f736d
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:^18.2.44":
-  version: 18.3.18
-  resolution: "@types/react@npm:18.3.18"
+"@types/react@npm:^19.0.0":
+  version: 19.0.10
+  resolution: "@types/react@npm:19.0.10"
   dependencies:
-    "@types/prop-types": "*"
     csstype: ^3.0.2
-  checksum: 5933597bc9f53e282f0438f0bb76d0f0fab60faabe760ea806e05ffe6f5c61b9b4d363e1a03a8fea47c510d493c6cf926cdeeba9f7074fa97b61940c350245e7
+  checksum: e257e87bc3464825014523aecc700540a9da41c3c23136c03da9b2b7999251ac70ef9e594febdefeea6abe51da2475b42e5d96af6559d76f8d54bffc0b0ddacd
   languageName: node
   linkType: hard
 
@@ -9954,7 +9946,7 @@ __metadata:
     "@semantic-release/changelog": ^6.0.3
     "@semantic-release/git": ^10.0.1
     "@types/jest": ^29.5.5
-    "@types/react": ^18.2.44
+    "@types/react": ^19.0.0
     commitlint: ^17.0.2
     del-cli: ^5.1.0
     husky: ^9.1.7
