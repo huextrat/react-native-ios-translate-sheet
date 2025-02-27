@@ -1,10 +1,6 @@
-#ifdef __cplusplus
-
+#ifdef RCT_NEW_ARCH_ENABLED
 #import <React/RCTViewComponentView.h>
 #import <UIKit/UIKit.h>
-
-#ifndef IOSTranslateSheetViewNativeComponent_h
-#define IOSTranslateSheetViewNativeComponent_h
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -12,7 +8,4 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
-
-#endif /* IOSTranslateSheetViewNativeComponent_h */
-
-#endif /* __cplusplus */
+#endif
