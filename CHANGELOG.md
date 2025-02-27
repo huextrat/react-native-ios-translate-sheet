@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.1.0...v1.1.1) (2025-02-27)
+
+
+### Bug Fixes
+
+* export only the provider and hook ([d1e14d8](https://github.com/huextrat/react-native-ios-translate-sheet/commit/d1e14d883ae7f97941980f68914f662cfa544bfc))
+
 # [1.1.0](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.0.1...v1.1.0) (2025-02-27)
 
 
