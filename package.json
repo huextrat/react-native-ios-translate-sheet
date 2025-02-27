@@ -1,6 +1,6 @@
 {
   "name": "react-native-ios-translate-sheet",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "SwiftUI Translate Sheet on React Native",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
@@ -39,16 +39,20 @@
   "scripts": {
     "example": "yarn workspace react-native-ios-translate-sheet-example",
     "test": "jest",
-    "typecheck": "tsc",
-    "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "lint": "npx biome check ./src && npx biome format ./src && yarn lint:example",
+    "lint:example": "npx biome check ./example/src && npx biome format ./example/src",
+    "lint:fix": "npx biome lint --write ./src && npx biome format --write ./src && npx biome check --write ./src && yarn lint:fix:example",
+    "lint:fix:example": "npx biome lint --write ./example/src && npx biome format --write ./example/src && npx biome check --write ./example/src",
     "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build lib",
     "prepare": "bob build",
-    "release": "release-it"
+    "release": "semantic-release"
   },
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "translate",
+    "sheet",
+    "swiftui"
   ],
   "repository": {
     "type": "git",
@@ -64,20 +68,16 @@
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
     "@commitlint/config-conventional": "^17.0.2",
-    "@evilmartians/lefthook": "^1.5.0",
     "@react-native-community/cli": "15.0.1",
-    "@react-native/eslint-config": "^0.73.1",
     "@release-it/conventional-changelog": "^9.0.2",
     "@types/jest": "^29.5.5",
     "@types/react": "^18.2.44",
     "commitlint": "^17.0.2",
     "del-cli": "^5.1.0",
-    "eslint": "^8.51.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.1",
+    "husky": "^9.1.7",
     "jest": "^29.7.0",
-    "prettier": "^3.0.3",
     "react": "19.0.0",
     "react-native": "0.78.0",
     "react-native-builder-bob": "^0.37.0",
@@ -124,37 +124,6 @@
         "preset": "angular"
       }
     }
-  },
-  "eslintConfig": {
-    "root": true,
-    "extends": [
-      "@react-native",
-      "prettier"
-    ],
-    "rules": {
-      "react/react-in-jsx-scope": "off",
-      "prettier/prettier": [
-        "error",
-        {
-          "quoteProps": "consistent",
-          "singleQuote": true,
-          "tabWidth": 2,
-          "trailingComma": "es5",
-          "useTabs": false
-        }
-      ]
-    }
-  },
-  "eslintIgnore": [
-    "node_modules/",
-    "lib/"
-  ],
-  "prettier": {
-    "quoteProps": "consistent",
-    "singleQuote": true,
-    "tabWidth": 2,
-    "trailingComma": "es5",
-    "useTabs": false
   },
   "react-native-builder-bob": {
     "source": "src",

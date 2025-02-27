@@ -30,10 +30,15 @@ class IOSTranslateSheetViewManager : SimpleViewManager<IOSTranslateSheetView>(),
     return IOSTranslateSheetView(context)
   }
 
-  @ReactProp(name = "color")
-  override fun setColor(view: IOSTranslateSheetView?, color: String?) {
-    view?.setBackgroundColor(Color.parseColor(color))
+  @ReactProp(name = "text")
+  override fun setText(view: IOSTranslateSheetView, text: String?) {
+    // No-op implementation since this is iOS-only
   }
+
+  @ReactProp(name = "isPresented")
+  override fun setIsPresented(view: IOSTranslateSheetView, isPresented: Boolean) {
+    // No-op implementation since this is iOS-only
+  }  
 
   companion object {
     const val NAME = "IOSTranslateSheetView"

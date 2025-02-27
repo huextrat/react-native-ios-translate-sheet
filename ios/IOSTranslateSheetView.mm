@@ -7,6 +7,12 @@
 
 #import "RCTFabricComponentsPlugins.h"
 
+#if __has_include("IOSTranslateSheet/IOSTranslateSheet-Swift.h")
+#import "IOSTranslateSheet/IOSTranslateSheet-Swift.h"
+#else
+#import "IOSTranslateSheet-Swift.h"
+#endif
+
 using namespace facebook::react;
 
 @interface IOSTranslateSheetView () <RCTIOSTranslateSheetViewViewProtocol>
@@ -14,7 +20,7 @@ using namespace facebook::react;
 @end
 
 @implementation IOSTranslateSheetView {
-    UIView * _view;
+    IOSTranslateSheetProvider * _view;
 }
 
 + (ComponentDescriptorProvider)componentDescriptorProvider
@@ -28,7 +34,19 @@ using namespace facebook::react;
     static const auto defaultProps = std::make_shared<const IOSTranslateSheetViewProps>();
     _props = defaultProps;
 
-    _view = [[UIView alloc] init];
+    _view = [[IOSTranslateSheetProvider alloc] init];
+    
+    __weak __typeof(self) weakSelf = self;
+    _view.onHideCallback = ^{
+        __strong __typeof(weakSelf) strongSelf = weakSelf;
+        if (strongSelf) {
+            // Emit the onHide event
+            if (strongSelf->_eventEmitter) {
+                std::dynamic_pointer_cast<const IOSTranslateSheetViewEventEmitter>(strongSelf->_eventEmitter)
+                    ->onHide({});
+            }
+        }
+    };
 
     self.contentView = _view;
   }
@@ -41,9 +59,17 @@ using namespace facebook::react;
     const auto &oldViewProps = *std::static_pointer_cast<IOSTranslateSheetViewProps const>(_props);
     const auto &newViewProps = *std::static_pointer_cast<IOSTranslateSheetViewProps const>(props);
 
-    if (oldViewProps.color != newViewProps.color) {
-        NSString * colorToConvert = [[NSString alloc] initWithUTF8String: newViewProps.color.c_str()];
-        [_view setBackgroundColor:[self hexStringToColor:colorToConvert]];
+    if (oldViewProps.text != newViewProps.text) {
+        NSString *text = [[NSString alloc] initWithUTF8String: newViewProps.text.c_str()];
+        [_view setText:text];
+    }
+    
+    if (oldViewProps.isPresented != newViewProps.isPresented) {
+        [_view setIsPresented:newViewProps.isPresented];
+    }
+
+    if (oldViewProps.opacity != newViewProps.opacity) {
+        [_view setOpacity:newViewProps.opacity];
     }
 
     [super updateProps:props oldProps:oldProps];
@@ -52,20 +78,6 @@ using namespace facebook::react;
 Class<RCTComponentViewProtocol> IOSTranslateSheetViewCls(void)
 {
     return IOSTranslateSheetView.class;
-}
-
-- hexStringToColor:(NSString *)stringToConvert
-{
-    NSString *noHashString = [stringToConvert stringByReplacingOccurrencesOfString:@"#" withString:@""];
-    NSScanner *stringScanner = [NSScanner scannerWithString:noHashString];
-
-    unsigned hex;
-    if (![stringScanner scanHexInt:&hex]) return nil;
-    int r = (hex >> 16) & 0xFF;
-    int g = (hex >> 8) & 0xFF;
-    int b = (hex) & 0xFF;
-
-    return [UIColor colorWithRed:r / 255.0f green:g / 255.0f blue:b / 255.0f alpha:1.0f];
 }
 
 @end

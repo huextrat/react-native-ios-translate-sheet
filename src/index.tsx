@@ -1,2 +1,3 @@
-export { default as IOSTranslateSheetView } from './IOSTranslateSheetViewNativeComponent';
-export * from './IOSTranslateSheetViewNativeComponent';
+export { default as IOSTranslateSheet } from "./IOSTranslateSheetViewNativeComponent";
+export * from "./IOSTranslateSheetViewNativeComponent";
+export * from "./useTranslate";
