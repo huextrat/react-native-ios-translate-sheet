@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.0.0...v1.0.1) (2025-02-27)
+
+
+### Bug Fixes
+
+* make a provider ([5a5fcc7](https://github.com/huextrat/react-native-ios-translate-sheet/commit/5a5fcc7130a691180e817c856fc04521c811b79f))
+
 # 1.0.0 (2025-02-27)
 
 

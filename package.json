@@ -1,6 +1,6 @@
 {
   "name": "react-native-ios-translate-sheet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SwiftUI Translate Sheet on React Native",
   "source": "./src/index.tsx",
   "main": "lib/commonjs/index.js",
