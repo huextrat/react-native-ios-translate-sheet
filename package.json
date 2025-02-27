@@ -72,6 +72,8 @@
     "@commitlint/config-conventional": "^17.0.2",
     "@react-native-community/cli": "15.0.1",
     "@release-it/conventional-changelog": "^9.0.2",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
     "@types/jest": "^29.5.5",
     "@types/react": "^18.2.44",
     "commitlint": "^17.0.2",
@@ -82,6 +84,7 @@
     "react-native": "0.78.0",
     "react-native-builder-bob": "^0.37.0",
     "release-it": "^17.10.0",
+    "semantic-release": "^24.2.3",
     "turbo": "^1.10.7",
     "typescript": "^5.2.2"
   },
