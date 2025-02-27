@@ -8,7 +8,6 @@ export const Example = () => {
   const handleTranslateEn = () => {
     presentIOSTranslateSheet(
       "Hello world! This is a sample text to translate.",
-      1
     );
   };
 
