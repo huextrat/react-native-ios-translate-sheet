@@ -1,21 +1,21 @@
 import { Button, StyleSheet, Text, View } from "react-native";
-import { useTranslate } from "react-native-ios-translate-sheet";
+import { useIOSTranslateSheet } from "react-native-ios-translate-sheet";
 
 export default function App() {
-  const { translate, TranslateView } = useTranslate();
+  const { presentIOSTranslateSheet, IOSTranslateSheetView } = useIOSTranslateSheet();
 
   const handleTranslateEn = () => {
-    translate("Hello world! This is a sample text to translate.");
+    presentIOSTranslateSheet("Hello world! This is a sample text to translate.");
   };
 
   const handleTranslateFr = () => {
-    translate("Salut le monde ! Ceci est un exemple de texte à traduire.");
+    presentIOSTranslateSheet("Salut le monde ! Ceci est un exemple de texte à traduire.");
   };
 
   return (
     <View style={styles.container}>
-      {/* Add the TranslateView component to your render tree */}
-      <TranslateView />
+      {/* Add the IOSTranslateSheetView component to your render tree */}
+      <IOSTranslateSheetView />
       <Text style={styles.text}>Press the button below to translate text</Text>
       <Button title="Translate EN -> FR " onPress={handleTranslateEn} />
       <Button title="Translate FR -> EN" onPress={handleTranslateFr} />
