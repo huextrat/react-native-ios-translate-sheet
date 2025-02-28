@@ -16,6 +16,8 @@
   </a>
 </p>
 
+> **Note**: If you need to perform multiple translations and retrieve the translated text to display within your app, consider using [react-native-ios-translate-tasks](https://github.com/huextrat/react-native-ios-translate-tasks) instead. This library is focused on providing the native iOS translation sheet UI experience.
+
 ## Features
 
 - 🔄 Seamless integration with iOS native translation capabilities
@@ -84,6 +86,14 @@ function MyComponent() {
     />
   );
 }
+```
+
+### Checking Platform Support
+
+The `useIOSTranslateSheet` hook provides an `isSupported` boolean that you can use to check if the translation functionality is available on the current device:
+
+```tsx
+const { isSupported } = useIOSTranslateSheet();
 ```
 
 Note: The translation sheet will only appear on iOS devices running version 17.4 or later. On other platforms or iOS versions below 17.4, the `presentIOSTranslateSheet` function will do nothing.

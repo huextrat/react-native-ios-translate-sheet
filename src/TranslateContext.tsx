@@ -4,6 +4,7 @@ import IOSTranslateSheet from "./IOSTranslateSheetViewNativeComponent";
 import { useInternalTranslateSheet } from "./hooks/useInternalTranslate";
 
 type TranslateContextType = {
+  isSupported: boolean;
   presentIOSTranslateSheet: (text: string, opacity?: number) => void;
 };
 
@@ -18,10 +19,16 @@ export const IOSTranslateSheetProvider = ({
     text,
     hideTranslateSheet,
     opacity,
+    isSupported,
   } = useInternalTranslateSheet();
 
   return (
-    <TranslateContext.Provider value={{ presentIOSTranslateSheet }}>
+    <TranslateContext.Provider
+      value={{
+        presentIOSTranslateSheet,
+        isSupported,
+      }}
+    >
       <IOSTranslateSheet
         text={text}
         isPresented={isIOSTranslateSheetPresented}
