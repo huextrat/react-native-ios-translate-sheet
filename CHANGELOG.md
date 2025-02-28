@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.1.2...v1.1.3) (2025-02-28)
+
+
+### Bug Fixes
+
+* add `isSupported` ([606be58](https://github.com/huextrat/react-native-ios-translate-sheet/commit/606be58e6db7780c3e2b991f0793fb5894f3260e))
+
 ## [1.1.2](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.1.1...v1.1.2) (2025-02-27)
 
 
