@@ -2583,6 +2583,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-native-community/cli-config-android@npm:17.0.0":
+  version: 17.0.0
+  resolution: "@react-native-community/cli-config-android@npm:17.0.0"
+  dependencies:
+    "@react-native-community/cli-tools": "npm:17.0.0"
+    chalk: "npm:^4.1.2"
+    fast-glob: "npm:^3.3.2"
+    fast-xml-parser: "npm:^4.4.1"
+  checksum: 10c0/f2b3173da5c780094aa7c68c66965c50eaf36a2b50809be8e907089fe6b13bd4170db3925bda54673c3646d9bde0ab5e991cb1fea6038ea0ee50b1eda110a16e
+  languageName: node
+  linkType: hard
+
 "@react-native-community/cli-config-apple@npm:15.1.3":
   version: 15.1.3
   resolution: "@react-native-community/cli-config-apple@npm:15.1.3"
@@ -2655,6 +2667,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-native-community/cli-platform-android@npm:17.0.0":
+  version: 17.0.0
+  resolution: "@react-native-community/cli-platform-android@npm:17.0.0"
+  dependencies:
+    "@react-native-community/cli-config-android": "npm:17.0.0"
+    "@react-native-community/cli-tools": "npm:17.0.0"
+    chalk: "npm:^4.1.2"
+    execa: "npm:^5.0.0"
+    logkitty: "npm:^0.7.1"
+  checksum: 10c0/c53533d6045d11d89bdd59fc6274147778edc0b425e50cf6f0ffc8144c8ec85dc78533f5f6dd4d6867c87ce62229e9bd598774ac5054ac2afdcb832986f37f88
+  languageName: node
+  linkType: hard
+
 "@react-native-community/cli-platform-apple@npm:15.1.3":
   version: 15.1.3
   resolution: "@react-native-community/cli-platform-apple@npm:15.1.3"
@@ -2710,6 +2735,24 @@ __metadata:
     shell-quote: "npm:^1.7.3"
     sudo-prompt: "npm:^9.0.0"
   checksum: 10c0/e458f3a5e97456b6fa8741cd8c04ca384b7657df9f53111daaf132911b00b6b5bf08fad2206c8461d0974b71548296b9da669af76dddf7f3261ac5d527df6bcc
+  languageName: node
+  linkType: hard
+
+"@react-native-community/cli-tools@npm:17.0.0":
+  version: 17.0.0
+  resolution: "@react-native-community/cli-tools@npm:17.0.0"
+  dependencies:
+    "@vscode/sudo-prompt": "npm:^9.0.0"
+    appdirsjs: "npm:^1.2.4"
+    chalk: "npm:^4.1.2"
+    execa: "npm:^5.0.0"
+    find-up: "npm:^5.0.0"
+    launch-editor: "npm:^2.9.1"
+    mime: "npm:^2.4.1"
+    ora: "npm:^5.4.1"
+    prompts: "npm:^2.4.2"
+    semver: "npm:^7.5.2"
+  checksum: 10c0/a01dbc9d4653ae87b06dbc7b18890d785a68319216c85f661d3c637d6684d8b685455146304dc26773ea5997d681426f22fcad3af4b2115e54f35e389daab469
   languageName: node
   linkType: hard
 
@@ -3399,6 +3442,13 @@ __metadata:
   dependencies:
     "@types/yargs-parser": "npm:*"
   checksum: 10c0/d16937d7ac30dff697801c3d6f235be2166df42e4a88bf730fa6dc09201de3727c0a9500c59a672122313341de5f24e45ee0ff579c08ce91928e519090b7906b
+  languageName: node
+  linkType: hard
+
+"@vscode/sudo-prompt@npm:^9.0.0":
+  version: 9.3.1
+  resolution: "@vscode/sudo-prompt@npm:9.3.1"
+  checksum: 10c0/680f0c0d16303bf2f7b28fda83a3e6725e75a593461521460a56365af0ca619595e2b6dcc56b1fa4ba24f8be4030fb1b015c31a92773c09ca55c49da89490e38
   languageName: node
   linkType: hard
 
@@ -7177,6 +7227,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"launch-editor@npm:^2.9.1":
+  version: 2.10.0
+  resolution: "launch-editor@npm:2.10.0"
+  dependencies:
+    picocolors: "npm:^1.0.0"
+    shell-quote: "npm:^1.8.1"
+  checksum: 10c0/8b5a26be6b0da1da039ed2254b837dea0651a6406ea4dc4c9a5b28ea72862f1b12880135c495baf9d8a08997473b44034172506781744cf82e155451a40b7d51
+  languageName: node
+  linkType: hard
+
 "leven@npm:^3.1.0":
   version: 3.1.0
   resolution: "leven@npm:3.1.0"
@@ -9582,7 +9642,7 @@ __metadata:
     "@babel/preset-env": "npm:^7.25.3"
     "@babel/runtime": "npm:^7.25.0"
     "@react-native-community/cli": "npm:15.1.3"
-    "@react-native-community/cli-platform-android": "npm:15.1.3"
+    "@react-native-community/cli-platform-android": "npm:17.0.0"
     "@react-native-community/cli-platform-ios": "npm:15.1.3"
     "@react-native/babel-preset": "npm:0.78.0"
     "@react-native/metro-config": "npm:0.78.0"
@@ -10207,7 +10267,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"shell-quote@npm:^1.6.1, shell-quote@npm:^1.7.3":
+"shell-quote@npm:^1.6.1, shell-quote@npm:^1.7.3, shell-quote@npm:^1.8.1":
   version: 1.8.2
   resolution: "shell-quote@npm:1.8.2"
   checksum: 10c0/85fdd44f2ad76e723d34eb72c753f04d847ab64e9f1f10677e3f518d0e5b0752a176fd805297b30bb8c3a1556ebe6e77d2288dbd7b7b0110c7e941e9e9c20ce1
