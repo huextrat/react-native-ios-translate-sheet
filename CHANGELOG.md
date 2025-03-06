@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.4](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.1.3...v1.1.4) (2025-03-06)
+
+
+### Bug Fixes
+
+* codegen ([d52d96d](https://github.com/huextrat/react-native-ios-translate-sheet/commit/d52d96dac0e7d1dfa9a2ad1742464e3b068ad609))
+
 ## [1.1.3](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.1.2...v1.1.3) (2025-02-28)
 
 
