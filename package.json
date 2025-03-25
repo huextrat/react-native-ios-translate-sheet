@@ -1,6 +1,6 @@
 {
   "name": "react-native-ios-translate-sheet",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "SwiftUI Translate Sheet on React Native",
   "source": "./src/index.tsx",
   "main": "lib/commonjs/index.js",
@@ -37,7 +37,13 @@
     "prepare": "bob build",
     "release": "semantic-release"
   },
-  "keywords": ["react-native", "ios", "translate", "sheet", "swiftui"],
+  "keywords": [
+    "react-native",
+    "ios",
+    "translate",
+    "sheet",
+    "swiftui"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/huextrat/react-native-ios-translate-sheet.git"
@@ -77,7 +83,9 @@
     "react": "*",
     "react-native": ">=0.76"
   },
-  "workspaces": ["example"],
+  "workspaces": [
+    "example"
+  ],
   "packageManager": "yarn@4.7.0",
   "jest": {
     "preset": "react-native",
@@ -87,12 +95,19 @@
     ]
   },
   "commitlint": {
-    "extends": ["@commitlint/config-conventional"]
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
   "react-native-builder-bob": {
     "source": "src",
     "output": "lib",
-    "targets": ["codegen", "commonjs", "module", "typescript"]
+    "targets": [
+      "codegen",
+      "commonjs",
+      "module",
+      "typescript"
+    ]
   },
   "codegenConfig": {
     "name": "RNIOSTranslateSheetViewSpec",

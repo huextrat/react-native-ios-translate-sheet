@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.6](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.1.5...v1.1.6) (2025-03-25)
+
+
+### Bug Fixes
+
+* min RN peer dependency is now 0.76+ ([34a49fd](https://github.com/huextrat/react-native-ios-translate-sheet/commit/34a49fd4c83dd35f6a0b10e2d7630bbb59ac1264))
+
 ## [1.1.5](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.1.4...v1.1.5) (2025-03-19)
 
 
