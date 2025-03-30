@@ -75,14 +75,13 @@ function MyComponent() {
 
   const handleTranslate = () => {
     presentIOSTranslateSheet('Text to translate');
-    // Optional: You can pass an opacity value (0-1) as a second parameter
     // presentIOSTranslateSheet('Text to translate', 0.5);
   };
 
   return (
-    <Button 
-      title="Translate" 
-      onPress={handleTranslate} 
+    <Button
+      title="Translate"
+      onPress={handleTranslate}
     />
   );
 }

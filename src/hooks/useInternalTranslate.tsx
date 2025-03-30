@@ -9,7 +9,7 @@ export const useInternalTranslateSheet = () => {
     useState(false);
   const textRef = useRef("");
 
-  const presentIOSTranslateSheet = (_text: string, _opacity?: number) => {
+  const presentIOSTranslateSheet = (_text: string) => {
     textRef.current = _text;
     setIsIOSTranslateSheetPresented(true);
   };
