@@ -33,7 +33,7 @@ export const IOSTranslateSheetProvider = ({
         text={text}
         isPresented={isIOSTranslateSheetPresented}
         onHide={hideTranslateSheet}
-        style={styles.translateView}
+        style={StyleSheet.absoluteFillObject}
         opacity={opacity}
       />
       {children}
@@ -50,13 +50,3 @@ export const useIOSTranslateSheet = () => {
   }
   return context;
 };
-
-const styles = StyleSheet.create({
-  translateView: {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-  },
-});
