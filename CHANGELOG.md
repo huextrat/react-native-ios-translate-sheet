@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.2.0...v1.2.1) (2025-03-30)
+
+
+### Bug Fixes
+
+* remove outdated opacity prop mentions ([#38](https://github.com/huextrat/react-native-ios-translate-sheet/issues/38)) ([dd392c1](https://github.com/huextrat/react-native-ios-translate-sheet/commit/dd392c109d621c25842922b256f9e87edb3db693))
+
 # [1.2.0](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.1.8...v1.2.0) (2025-03-30)
 
 
