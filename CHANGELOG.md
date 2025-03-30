@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.2.0](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.1.8...v1.2.0) (2025-03-30)
+
+
+### Features
+
+* remove opacity customization ([#36](https://github.com/huextrat/react-native-ios-translate-sheet/issues/36)) ([3ca7f61](https://github.com/huextrat/react-native-ios-translate-sheet/commit/3ca7f61a17818683e63a063c72e426babc0b19b5))
+
 ## [1.1.8](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.1.7...v1.1.8) (2025-03-30)
 
 
