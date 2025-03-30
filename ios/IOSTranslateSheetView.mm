@@ -60,9 +60,6 @@ using namespace facebook::react;
     if (oldViewProps.isPresented != newViewProps.isPresented) {
         _view.isPresented = newViewProps.isPresented;
     }
-    if (oldViewProps.opacity != newViewProps.opacity) {
-        _view.opacity = newViewProps.opacity;
-    }
 
     [super updateProps:props oldProps:oldProps];
 }

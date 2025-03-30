@@ -8,11 +8,9 @@ export const useInternalTranslateSheet = () => {
   const [isIOSTranslateSheetPresented, setIsIOSTranslateSheetPresented] =
     useState(false);
   const textRef = useRef("");
-  const opacityRef = useRef(0);
 
   const presentIOSTranslateSheet = (_text: string, _opacity?: number) => {
     textRef.current = _text;
-    opacityRef.current = _opacity ?? 0;
     setIsIOSTranslateSheetPresented(true);
   };
 
@@ -25,7 +23,6 @@ export const useInternalTranslateSheet = () => {
     presentIOSTranslateSheet,
     hideTranslateSheet,
     text: textRef.current,
-    opacity: opacityRef.current,
     isSupported,
   };
 };

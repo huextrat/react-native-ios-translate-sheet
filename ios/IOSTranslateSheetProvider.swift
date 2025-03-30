@@ -32,25 +32,13 @@ public typealias RCTBubblingEventBlock = @convention(block) (_ body: [AnyHashabl
             hostingController?.view.isHidden = !isPresented
         }
     }
-    
-    @objc public var opacity: Double = 0.0 {
-        didSet {
-            props.opacity = opacity
-            updateBackgroundColor()
-        }
-    }
-    
+
     @objc public var onHide: RCTBubblingEventBlock? {
         didSet {
             props.onHide = { [weak self] in
                 self?.onHide?([:])
             }
         }
-    }
-
-    private func updateBackgroundColor() {
-        let currentOpacity = isPresented ? opacity : 0.0
-        hostingController?.view.backgroundColor = UIColor(white: 0.0, alpha: currentOpacity)
     }
     
     public override func layoutSubviews() {
