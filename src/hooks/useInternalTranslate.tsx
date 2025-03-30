@@ -2,8 +2,7 @@ import { useRef, useState } from "react";
 import { Platform } from "react-native";
 
 const isSupported =
-  Platform.OS === "ios" &&
-  Number.parseFloat(String(Platform.Version)) >= 17.4;
+  Platform.OS === "ios" && Number.parseFloat(String(Platform.Version)) >= 17.4;
 
 export const useInternalTranslateSheet = () => {
   const [isIOSTranslateSheetPresented, setIsIOSTranslateSheetPresented] =
