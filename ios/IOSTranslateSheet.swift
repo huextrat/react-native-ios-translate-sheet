@@ -5,7 +5,6 @@ class Props: ObservableObject {
     @Published var text: String = ""
     @Published var isPresented: Bool = false
     @Published var onHide: () -> Void = {}
-    @Published var opacity: Double = 0.0
 }
 
 struct IOSTranslateSheet: View {
