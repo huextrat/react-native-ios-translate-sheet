@@ -75,7 +75,6 @@ function MyComponent() {
 
   const handleTranslate = () => {
     presentIOSTranslateSheet('Text to translate');
-    // presentIOSTranslateSheet('Text to translate', 0.5);
   };
 
   return (
