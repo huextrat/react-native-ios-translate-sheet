@@ -33,10 +33,24 @@ public typealias RCTBubblingEventBlock = @convention(block) (_ body: [AnyHashabl
         }
     }
 
+    @objc public var hasReplacementAction: Bool = false {
+        didSet {
+            props.hasReplacementAction = hasReplacementAction
+        }
+    }
+
     @objc public var onHide: RCTBubblingEventBlock? {
         didSet {
             props.onHide = { [weak self] in
                 self?.onHide?([:])
+            }
+        }
+    }
+
+    @objc public var onReplacementAction: RCTBubblingEventBlock? {
+        didSet {
+            props.onReplacementAction = { [weak self] text in
+                self?.onReplacementAction?(["text": text])
             }
         }
     }

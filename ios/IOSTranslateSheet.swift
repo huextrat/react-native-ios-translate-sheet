@@ -4,7 +4,9 @@ import Translation
 class Props: ObservableObject {
     @Published var text: String = ""
     @Published var isPresented: Bool = false
+    @Published var hasReplacementAction: Bool = false
     @Published var onHide: () -> Void = {}
+    @Published var onReplacementAction: (String) -> Void = { _ in }
 }
 
 struct IOSTranslateSheet: View {
@@ -14,7 +16,11 @@ struct IOSTranslateSheet: View {
         if #available(iOS 17.4, *) {
             Color.clear
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .translationPresentation(isPresented: $props.isPresented, text: props.text)
+                .translationPresentation(
+                    isPresented: $props.isPresented,
+                    text: props.text,
+                    replacementAction: props.hasReplacementAction ? props.onReplacementAction : nil
+                )
                 .onChange(of: props.isPresented) { oldValue, newValue in
                     if oldValue == true && newValue == false {
                         props.onHide()

@@ -86,6 +86,33 @@ function MyComponent() {
 }
 ```
 
+### Replacement Action
+
+The Replacement Action feature allows you to capture and handle the translated text after a user completes a translation. This is particularly useful for:
+- Saving translations for later use
+- Updating UI elements with translated content
+- Implementing "translate and replace" functionality
+- Storing translations in your app's state or database
+
+#### Basic Usage
+
+To handle translated text, provide a callback function as the second parameter to `presentIOSTranslateSheet`:
+
+```tsx
+const { presentIOSTranslateSheet } = useIOSTranslateSheet();
+
+const handleTranslate = () => {
+  presentIOSTranslateSheet(
+    'Hello, how are you?',
+    (translatedText) => {
+      // Handle the translated text here
+      setTranslatedContent(translatedText);
+    }
+  );
+};
+```
+
+
 ### Checking Platform Support
 
 The `useIOSTranslateSheet` hook provides an `isSupported` boolean that you can use to check if the translation functionality is available on the current device:

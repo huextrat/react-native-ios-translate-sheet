@@ -1,11 +1,16 @@
 import { type ReactNode, createContext, useContext } from "react";
-import { StyleSheet } from "react-native";
-import IOSTranslateSheet from "./IOSTranslateSheetViewNativeComponent";
+import { type NativeSyntheticEvent, StyleSheet } from "react-native";
+import IOSTranslateSheet, {
+  type OnReplacementActionEvent,
+} from "./IOSTranslateSheetViewNativeComponent";
 import { useInternalTranslateSheet } from "./hooks/useInternalTranslate";
 
 type TranslateContextType = {
   isSupported: boolean;
-  presentIOSTranslateSheet: (text: string) => void;
+  presentIOSTranslateSheet: (
+    text: string,
+    replacementAction?: (text: string) => void,
+  ) => void;
 };
 
 const TranslateContext = createContext<TranslateContextType | null>(null);
@@ -19,7 +24,14 @@ export const IOSTranslateSheetProvider = ({
     text,
     hideTranslateSheet,
     isSupported,
+    replacementAction,
   } = useInternalTranslateSheet();
+
+  const onReplacementAction = (
+    event: NativeSyntheticEvent<OnReplacementActionEvent>,
+  ) => {
+    replacementAction?.(event.nativeEvent.text);
+  };
 
   return (
     <TranslateContext.Provider
@@ -33,6 +45,8 @@ export const IOSTranslateSheetProvider = ({
         isPresented={isIOSTranslateSheetPresented}
         onHide={hideTranslateSheet}
         style={StyleSheet.absoluteFillObject}
+        hasReplacementAction={!!replacementAction}
+        onReplacementAction={onReplacementAction}
       />
       {children}
     </TranslateContext.Provider>
