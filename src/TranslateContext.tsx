@@ -5,7 +5,7 @@ import { useInternalTranslateSheet } from "./hooks/useInternalTranslate";
 
 type TranslateContextType = {
   isSupported: boolean;
-  presentIOSTranslateSheet: (text: string, opacity?: number) => void;
+  presentIOSTranslateSheet: (text: string) => void;
 };
 
 const TranslateContext = createContext<TranslateContextType | null>(null);
