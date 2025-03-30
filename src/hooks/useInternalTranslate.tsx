@@ -1,20 +1,20 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Platform } from "react-native";
+
+const isSupported =
+  Platform.OS === "ios" &&
+  Number.parseFloat(String(Platform.Version)) >= 17.4;
 
 export const useInternalTranslateSheet = () => {
   const [isIOSTranslateSheetPresented, setIsIOSTranslateSheetPresented] =
     useState(false);
-  const [text, setText] = useState("");
-  const [opacity, setOpacity] = useState(0);
-
-  const isSupported =
-    Platform.OS === "ios" &&
-    Number.parseFloat(String(Platform.Version)) >= 17.4;
+  const textRef = useRef("");
+  const opacityRef = useRef(0);
 
   const presentIOSTranslateSheet = (_text: string, _opacity?: number) => {
+    textRef.current = _text;
+    opacityRef.current = _opacity ?? 0;
     setIsIOSTranslateSheetPresented(true);
-    setText(_text);
-    setOpacity(_opacity ?? 0);
   };
 
   const hideTranslateSheet = () => {
@@ -25,8 +25,8 @@ export const useInternalTranslateSheet = () => {
     isIOSTranslateSheetPresented,
     presentIOSTranslateSheet,
     hideTranslateSheet,
-    text,
-    opacity,
+    text: textRef.current,
+    opacity: opacityRef.current,
     isSupported,
   };
 };
