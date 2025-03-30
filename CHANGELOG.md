@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.3.0](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.2.1...v1.3.0) (2025-03-30)
+
+
+### Features
+
+* init onReplacementAction ([#39](https://github.com/huextrat/react-native-ios-translate-sheet/issues/39)) ([4ff0c1e](https://github.com/huextrat/react-native-ios-translate-sheet/commit/4ff0c1e1cdcd8e7337ef0102a99d2f8ce6055e91))
+
 ## [1.2.1](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.2.0...v1.2.1) (2025-03-30)
 
 
