@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.8](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.1.7...v1.1.8) (2025-03-30)
+
+
+### Bug Fixes
+
+* replace styles and states, calculate isSupported only once  ([#35](https://github.com/huextrat/react-native-ios-translate-sheet/issues/35)) ([2517bd4](https://github.com/huextrat/react-native-ios-translate-sheet/commit/2517bd4e815cca32a0a1a29deef1c6df671e258e))
+
 ## [1.1.7](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.1.6...v1.1.7) (2025-03-28)
 
 
