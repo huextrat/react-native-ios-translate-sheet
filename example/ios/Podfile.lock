@@ -8,7 +8,7 @@ PODS:
   - hermes-engine (0.78.0):
     - hermes-engine/Pre-built (= 0.78.0)
   - hermes-engine/Pre-built (0.78.0)
-  - IOSTranslateSheet (1.1.7):
+  - IOSTranslateSheet (1.2.1):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1769,7 +1769,7 @@ SPEC CHECKSUMS:
   fmt: a40bb5bd0294ea969aaaba240a927bd33d878cdd
   glog: eb93e2f488219332457c3c4eafd2738ddc7e80b8
   hermes-engine: b417d2b2aee3b89b58e63e23a51e02be91dc876d
-  IOSTranslateSheet: 3ec1230530e64c9a3f60983011ca9c9f28033287
+  IOSTranslateSheet: 1ddfcb99b7daf8b06e9d8944a5e3b5545655bb80
   RCT-Folly: e78785aa9ba2ed998ea4151e314036f6c49e6d82
   RCTDeprecation: 082fbc90409015eac1366795a0b90f8b5cb28efe
   RCTRequired: ca966f4da75b62ce3ea8c538d82cb5ecbb06f12a

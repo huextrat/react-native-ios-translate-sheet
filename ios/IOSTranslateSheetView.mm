@@ -43,7 +43,15 @@ using namespace facebook::react;
                     ->onHide({});
             }
         };
-        
+
+        _view.onReplacementAction = ^(NSDictionary *text) {
+            __typeof__(self) strongSelf = weakSelf;
+            if (strongSelf && strongSelf->_eventEmitter) {
+                std::dynamic_pointer_cast<const IOSTranslateSheetViewEventEmitter>(strongSelf->_eventEmitter)
+                    ->onReplacementAction({.text = [text[@"text"] UTF8String]});
+            }
+        };
+
         self.contentView = _view;
     }
     return self;
@@ -59,6 +67,9 @@ using namespace facebook::react;
     }
     if (oldViewProps.isPresented != newViewProps.isPresented) {
         _view.isPresented = newViewProps.isPresented;
+    }
+    if (oldViewProps.hasReplacementAction != newViewProps.hasReplacementAction) {
+        _view.hasReplacementAction = newViewProps.hasReplacementAction;
     }
 
     [super updateProps:props oldProps:oldProps];

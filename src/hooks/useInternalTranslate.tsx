@@ -8,9 +8,14 @@ export const useInternalTranslateSheet = () => {
   const [isIOSTranslateSheetPresented, setIsIOSTranslateSheetPresented] =
     useState(false);
   const textRef = useRef("");
+  const replacementActionRef = useRef<(text: string) => void>(undefined);
 
-  const presentIOSTranslateSheet = (_text: string) => {
+  const presentIOSTranslateSheet = (
+    _text: string,
+    _replacementAction?: (text: string) => void,
+  ) => {
     textRef.current = _text;
+    replacementActionRef.current = _replacementAction;
     setIsIOSTranslateSheetPresented(true);
   };
 
@@ -24,5 +29,6 @@ export const useInternalTranslateSheet = () => {
     hideTranslateSheet,
     text: textRef.current,
     isSupported,
+    replacementAction: replacementActionRef.current,
   };
 };

@@ -9,7 +9,9 @@ export const Example = () => {
   const frText = "Salut le monde ! Ceci est un exemple de texte à traduire.";
 
   const handleTranslateEn = () => {
-    presentIOSTranslateSheet(enText);
+    presentIOSTranslateSheet(enText, (text) => {
+      console.log("Replacement action triggered:", text);
+    });
   };
 
   const handleTranslateFr = () => {
