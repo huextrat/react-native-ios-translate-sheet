@@ -120,6 +120,11 @@
     "android": {
       "javaPackageName": "com.iostranslatesheet"
     },
+    "ios": {
+      "componentProvider": {
+        "IOSTranslateSheetView": "IOSTranslateSheetView"
+      }
+    },
     "includesGeneratedCode": true
   },
   "create-react-native-library": {
