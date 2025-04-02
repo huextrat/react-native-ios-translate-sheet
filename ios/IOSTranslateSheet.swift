@@ -19,6 +19,8 @@ struct IOSTranslateSheet: View {
                 .translationPresentation(
                     isPresented: $props.isPresented,
                     text: props.text,
+                    attachmentAnchor: .point(.bottom),
+                    arrowEdge: .bottom,
                     replacementAction: props.hasReplacementAction ? props.onReplacementAction : nil
                 )
                 .onChange(of: props.isPresented) { oldValue, newValue in
