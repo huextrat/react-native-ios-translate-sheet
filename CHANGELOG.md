@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.2](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.3.1...v1.3.2) (2025-04-02)
+
+
+### Bug Fixes
+
+* add componentProvider for iOS codegen ([#45](https://github.com/huextrat/react-native-ios-translate-sheet/issues/45)) ([0f08420](https://github.com/huextrat/react-native-ios-translate-sheet/commit/0f08420867fb1934de1539fb92f4e3f7eeb28003))
+* quickfix to support iPad ([#40](https://github.com/huextrat/react-native-ios-translate-sheet/issues/40)) ([46e2806](https://github.com/huextrat/react-native-ios-translate-sheet/commit/46e2806281fd4c533bd7386ef39793d3de0e7b2b))
+
 ## [1.3.1](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.3.0...v1.3.1) (2025-04-01)
 
 
