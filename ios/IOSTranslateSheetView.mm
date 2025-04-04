@@ -71,6 +71,12 @@ using namespace facebook::react;
     if (oldViewProps.hasReplacementAction != newViewProps.hasReplacementAction) {
         _view.hasReplacementAction = newViewProps.hasReplacementAction;
     }
+    if (oldViewProps.translateAnchorPointX != newViewProps.translateAnchorPointX) {
+        _view.translateAnchorPointX = @(newViewProps.translateAnchorPointX);
+    }
+    if (oldViewProps.translateAnchorPointY != newViewProps.translateAnchorPointY) {
+        _view.translateAnchorPointY = @(newViewProps.translateAnchorPointY);
+    }
 
     [super updateProps:props oldProps:oldProps];
 }
