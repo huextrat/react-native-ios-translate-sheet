@@ -31,6 +31,8 @@ RCT_EXPORT_MODULE(IOSTranslateSheetView)
 RCT_EXPORT_VIEW_PROPERTY(text, NSString)
 RCT_EXPORT_VIEW_PROPERTY(isPresented, BOOL)
 RCT_EXPORT_VIEW_PROPERTY(hasReplacementAction, BOOL)
+RCT_EXPORT_VIEW_PROPERTY(translateAnchorPointX, NSNumber)
+RCT_EXPORT_VIEW_PROPERTY(translateAnchorPointY, NSNumber)
 RCT_EXPORT_VIEW_PROPERTY(onHide, RCTDirectEventBlock)
 RCT_EXPORT_VIEW_PROPERTY(onReplacementAction, RCTDirectEventBlock)
 
