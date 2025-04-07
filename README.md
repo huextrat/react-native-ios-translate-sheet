@@ -74,7 +74,36 @@ function MyComponent() {
   const { presentIOSTranslateSheet } = useIOSTranslateSheet();
 
   const handleTranslate = () => {
-    presentIOSTranslateSheet('Text to translate');
+    presentIOSTranslateSheet({
+      text: 'Text to translate',
+    });
+  };
+
+  return (
+    <Button
+      title="Translate"
+      onPress={handleTranslate}
+    />
+  );
+}
+```
+
+### iPad
+
+On iPad, the translation sheet needs an anchor point to display correctly (it's optional, and by default the sheet will be displayed at the bottom of the screen). You can specify the position where the sheet should appear by providing a gesture event to `presentIOSTranslateSheet`:
+
+```tsx
+import type { GestureResponderEvent } from "react-native";
+import { useIOSTranslateSheet } from 'react-native-ios-translate-sheet';
+
+function MyComponent() {
+  const { presentIOSTranslateSheet } = useIOSTranslateSheet();
+
+  const handleTranslate = (event: GestureResponderEvent) => {
+    presentIOSTranslateSheet({
+      text: 'Text to translate',
+      gestureEvent: event,
+    });
   };
 
   return (
@@ -102,13 +131,13 @@ To handle translated text, provide a callback function as the second parameter t
 const { presentIOSTranslateSheet } = useIOSTranslateSheet();
 
 const handleTranslate = () => {
-  presentIOSTranslateSheet(
-    'Hello, how are you?',
-    (translatedText) => {
+  presentIOSTranslateSheet({
+    text: 'Hello, how are you?',
+    replacementAction: (translatedText) => {
       // Handle the translated text here
       setTranslatedContent(translatedText);
-    }
-  );
+    },
+  });
 };
 ```
 

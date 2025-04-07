@@ -1,5 +1,8 @@
 import type { ViewProps } from "react-native";
-import type { DirectEventHandler } from "react-native/Libraries/Types/CodegenTypes";
+import type {
+  DirectEventHandler,
+  Double,
+} from "react-native/Libraries/Types/CodegenTypes";
 import codegenNativeComponent from "react-native/Libraries/Utilities/codegenNativeComponent";
 
 export interface OnReplacementActionEvent {
@@ -10,6 +13,8 @@ interface IOSTranslateSheetProps extends ViewProps {
   text: string;
   isPresented: boolean;
   hasReplacementAction: boolean;
+  translateAnchorPointX?: Double;
+  translateAnchorPointY?: Double;
   onHide: DirectEventHandler<null>;
   onReplacementAction?: DirectEventHandler<OnReplacementActionEvent>;
 }

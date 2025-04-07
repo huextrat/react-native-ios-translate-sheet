@@ -1,5 +1,11 @@
 import React from "react";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import {
+  type GestureResponderEvent,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import { useIOSTranslateSheet } from "react-native-ios-translate-sheet";
 
 export const Example = () => {
@@ -8,14 +14,18 @@ export const Example = () => {
   const enText = "Hello world! This is a sample text to translate.";
   const frText = "Salut le monde ! Ceci est un exemple de texte à traduire.";
 
-  const handleTranslateEn = () => {
-    presentIOSTranslateSheet(enText, (text) => {
-      console.log("Replacement action triggered:", text);
+  const handleTranslateEn = (event: GestureResponderEvent) => {
+    presentIOSTranslateSheet({
+      text: enText,
+      replacementAction: (text) => {
+        console.log("Replacement action triggered:", text);
+      },
+      gestureEvent: event,
     });
   };
 
   const handleTranslateFr = () => {
-    presentIOSTranslateSheet(frText);
+    presentIOSTranslateSheet({ text: frText });
   };
 
   return (

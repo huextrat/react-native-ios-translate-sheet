@@ -1,16 +1,23 @@
 import { type ReactNode, createContext, useContext } from "react";
-import { type NativeSyntheticEvent, StyleSheet } from "react-native";
+import {
+  type GestureResponderEvent,
+  type NativeSyntheticEvent,
+  StyleSheet,
+} from "react-native";
 import IOSTranslateSheet, {
   type OnReplacementActionEvent,
 } from "./IOSTranslateSheetViewNativeComponent";
 import { useInternalTranslateSheet } from "./hooks/useInternalTranslate";
 
+export type PresentIOSTranslateSheetParams = {
+  text: string;
+  replacementAction?: (text: string) => void;
+  gestureEvent?: GestureResponderEvent;
+};
+
 type TranslateContextType = {
   isSupported: boolean;
-  presentIOSTranslateSheet: (
-    text: string,
-    replacementAction?: (text: string) => void,
-  ) => void;
+  presentIOSTranslateSheet: (params: PresentIOSTranslateSheetParams) => void;
 };
 
 const TranslateContext = createContext<TranslateContextType | null>(null);
@@ -25,6 +32,7 @@ export const IOSTranslateSheetProvider = ({
     hideTranslateSheet,
     isSupported,
     replacementAction,
+    anchorPoint,
   } = useInternalTranslateSheet();
 
   const onReplacementAction = (
@@ -47,6 +55,8 @@ export const IOSTranslateSheetProvider = ({
         style={StyleSheet.absoluteFillObject}
         hasReplacementAction={!!replacementAction}
         onReplacementAction={onReplacementAction}
+        translateAnchorPointX={anchorPoint.x}
+        translateAnchorPointY={anchorPoint.y}
       />
       {children}
     </TranslateContext.Provider>

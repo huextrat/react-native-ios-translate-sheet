@@ -38,6 +38,18 @@ public typealias RCTBubblingEventBlock = @convention(block) (_ body: [AnyHashabl
             props.hasReplacementAction = hasReplacementAction
         }
     }
+    
+    @objc public var translateAnchorPointX: NSNumber = 0 {
+        didSet {
+          props.translateAnchorPointX = CGFloat(translateAnchorPointX.doubleValue)
+        }
+    }
+
+    @objc public var translateAnchorPointY: NSNumber = 0 {
+        didSet {
+          props.translateAnchorPointY = CGFloat(translateAnchorPointY.doubleValue)
+        }
+    }
 
     @objc public var onHide: RCTBubblingEventBlock? {
         didSet {
