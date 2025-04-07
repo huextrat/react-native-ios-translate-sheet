@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
-import { type GestureResponderEvent, Platform } from "react-native";
+import { Platform } from "react-native";
+import type { PresentIOSTranslateSheetParams } from "../TranslateContext";
 
 const isSupported =
   Platform.OS === "ios" && Number.parseFloat(String(Platform.Version)) >= 17.4;
@@ -11,16 +12,12 @@ export const useInternalTranslateSheet = () => {
   const replacementActionRef = useRef<(text: string) => void>(undefined);
   const anchorPoint = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
 
-  const presentIOSTranslateSheet = (
-    _text: string,
-    _replacementAction?: (text: string) => void,
-    _anchorPoint?: GestureResponderEvent,
-  ) => {
-    textRef.current = _text;
-    replacementActionRef.current = _replacementAction;
+  const presentIOSTranslateSheet = (params: PresentIOSTranslateSheetParams) => {
+    textRef.current = params.text;
+    replacementActionRef.current = params.replacementAction;
     anchorPoint.current = {
-      x: _anchorPoint?.nativeEvent.pageX || 0,
-      y: _anchorPoint?.nativeEvent.pageY || 0,
+      x: params.gestureEvent?.nativeEvent.pageX || 0,
+      y: params.gestureEvent?.nativeEvent.pageY || 0,
     };
     setIsIOSTranslateSheetPresented(true);
   };

@@ -15,17 +15,17 @@ export const Example = () => {
   const frText = "Salut le monde ! Ceci est un exemple de texte à traduire.";
 
   const handleTranslateEn = (event: GestureResponderEvent) => {
-    presentIOSTranslateSheet(
-      enText,
-      (text) => {
+    presentIOSTranslateSheet({
+      text: enText,
+      replacementAction: (text) => {
         console.log("Replacement action triggered:", text);
       },
-      event,
-    );
+      gestureEvent: event,
+    });
   };
 
   const handleTranslateFr = () => {
-    presentIOSTranslateSheet(frText);
+    presentIOSTranslateSheet({ text: frText });
   };
 
   return (

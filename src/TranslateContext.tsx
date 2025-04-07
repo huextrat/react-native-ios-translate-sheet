@@ -9,13 +9,15 @@ import IOSTranslateSheet, {
 } from "./IOSTranslateSheetViewNativeComponent";
 import { useInternalTranslateSheet } from "./hooks/useInternalTranslate";
 
+export type PresentIOSTranslateSheetParams = {
+  text: string;
+  replacementAction?: (text: string) => void;
+  gestureEvent?: GestureResponderEvent;
+};
+
 type TranslateContextType = {
   isSupported: boolean;
-  presentIOSTranslateSheet: (
-    text: string,
-    replacementAction?: (text: string) => void,
-    anchorPoint?: GestureResponderEvent,
-  ) => void;
+  presentIOSTranslateSheet: (params: PresentIOSTranslateSheetParams) => void;
 };
 
 const TranslateContext = createContext<TranslateContextType | null>(null);
