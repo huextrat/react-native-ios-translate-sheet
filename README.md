@@ -86,6 +86,30 @@ function MyComponent() {
 }
 ```
 
+### iPad
+
+On iPad, the translation sheet needs an anchor point to display correctly (it's optional, and by default the sheet will be displayed at the bottom of the screen). You can specify the position where the sheet should appear by providing a gesture event as the third parameter to `presentIOSTranslateSheet`:
+
+```tsx
+import type { GestureResponderEvent } from "react-native";
+import { useIOSTranslateSheet } from 'react-native-ios-translate-sheet';
+
+function MyComponent() {
+  const { presentIOSTranslateSheet } = useIOSTranslateSheet();
+
+  const handleTranslate = (event: GestureResponderEvent) => {
+    presentIOSTranslateSheet('Text to translate', undefined, event);
+  };
+
+  return (
+    <Button
+      title="Translate"
+      onPress={handleTranslate}
+    />
+  );
+}
+```
+
 ### Replacement Action
 
 The Replacement Action feature allows you to capture and handle the translated text after a user completes a translation. This is particularly useful for:
