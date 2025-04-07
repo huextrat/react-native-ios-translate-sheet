@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.4.0](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.3.2...v1.4.0) (2025-04-07)
+
+
+### Features
+
+* **iPad:** translate sheet based on anchor point ([#49](https://github.com/huextrat/react-native-ios-translate-sheet/issues/49)) ([70beacf](https://github.com/huextrat/react-native-ios-translate-sheet/commit/70beacf65ea593cec161abf2ec58710330d5306d))
+
 ## [1.3.2](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.3.1...v1.3.2) (2025-04-02)
 
 
