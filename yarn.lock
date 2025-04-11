@@ -9951,9 +9951,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-builder-bob@npm:0.40.5":
-  version: 0.40.5
-  resolution: "react-native-builder-bob@npm:0.40.5"
+"react-native-builder-bob@npm:0.40.6":
+  version: 0.40.6
+  resolution: "react-native-builder-bob@npm:0.40.6"
   dependencies:
     "@babel/core": "npm:^7.25.2"
     "@babel/plugin-transform-strict-mode": "npm:^7.24.7"
@@ -9979,7 +9979,7 @@ __metadata:
     yargs: "npm:^17.5.1"
   bin:
     bob: bin/bob
-  checksum: 10c0/7d727ac756486a67234d911934ca074f7ff5c8ee727f5b7bb82b6cac923936706510772a5cfac102a94450f7687d1dca47e2323d7c06871fd0831aebe409de0a
+  checksum: 10c0/757f1b9134681e2b78ee225bd5e8a7cecc6b139f3d8a186f86b511682b92b8c4e555194ac1acd295a6759a317696942ea5289e80385ff58b52871d08646e4d52
   languageName: node
   linkType: hard
 
@@ -9998,7 +9998,7 @@ __metadata:
     "@react-native/typescript-config": "npm:0.79.0"
     react: "npm:19.0.0"
     react-native: "npm:0.78.2"
-    react-native-builder-bob: "npm:0.40.5"
+    react-native-builder-bob: "npm:0.40.6"
   languageName: unknown
   linkType: soft
 
@@ -10019,7 +10019,7 @@ __metadata:
     jest: "npm:29.7.0"
     react: "npm:19.1.0"
     react-native: "npm:0.78.2"
-    react-native-builder-bob: "npm:0.40.5"
+    react-native-builder-bob: "npm:0.40.6"
     semantic-release: "npm:24.2.3"
     turbo: "npm:2.5.0"
     typescript: "npm:5.8.3"
