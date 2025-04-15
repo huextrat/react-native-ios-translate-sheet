@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.4.0...v1.4.1) (2025-04-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-native to v0.79.1 ([#58](https://github.com/huextrat/react-native-ios-translate-sheet/issues/58)) ([d3fc73c](https://github.com/huextrat/react-native-ios-translate-sheet/commit/d3fc73c398c36e074bc69967c7d3a06f0883634a))
+
 # [1.4.0](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.3.2...v1.4.0) (2025-04-07)
 
 
