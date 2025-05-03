@@ -6075,7 +6075,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"escape-string-regexp@npm:5.0.0":
+"escape-string-regexp@npm:5.0.0, escape-string-regexp@npm:^5.0.0":
   version: 5.0.0
   resolution: "escape-string-regexp@npm:5.0.0"
   checksum: 10c0/6366f474c6f37a802800a435232395e04e9885919873e382b157ab7e8f0feb8fed71497f84a6f6a81a49aab41815522f5839112bd38026d203aea0c91622df95
@@ -10435,9 +10435,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-builder-bob@npm:0.40.7":
-  version: 0.40.7
-  resolution: "react-native-builder-bob@npm:0.40.7"
+"react-native-builder-bob@npm:0.40.8":
+  version: 0.40.8
+  resolution: "react-native-builder-bob@npm:0.40.8"
   dependencies:
     "@babel/core": "npm:^7.25.2"
     "@babel/plugin-transform-flow-strip-types": "npm:^7.26.5"
@@ -10459,11 +10459,12 @@ __metadata:
     kleur: "npm:^4.1.4"
     metro-config: "npm:^0.80.9"
     prompts: "npm:^2.4.2"
+    react-native-monorepo-config: "npm:^0.1.7"
     which: "npm:^2.0.2"
     yargs: "npm:^17.5.1"
   bin:
     bob: bin/bob
-  checksum: 10c0/04e5b9755404ba31e25fb7a6ad3ef1cf39a683dd6de3bdd0b34c93dbaf5dadf5f117115aff0149fb92d5c67f893925b9a9e78f5fad6079f98c1fd04590d01c96
+  checksum: 10c0/a1a10c6e1b36470c517b0956a60876d433dcede3461fa7a715db06a3335d6993312c6ebed7001a522862d85bf63109c98d426a8f45bec8749a68dffb75f28d99
   languageName: node
   linkType: hard
 
@@ -10482,7 +10483,7 @@ __metadata:
     "@react-native/typescript-config": "npm:0.79.2"
     react: "npm:19.0.0"
     react-native: "npm:0.79.2"
-    react-native-builder-bob: "npm:0.40.7"
+    react-native-builder-bob: "npm:0.40.8"
   languageName: unknown
   linkType: soft
 
@@ -10503,7 +10504,7 @@ __metadata:
     jest: "npm:29.7.0"
     react: "npm:19.1.0"
     react-native: "npm:0.79.2"
-    react-native-builder-bob: "npm:0.40.7"
+    react-native-builder-bob: "npm:0.40.8"
     semantic-release: "npm:24.2.3"
     turbo: "npm:2.5.2"
     typescript: "npm:5.8.3"
@@ -10512,6 +10513,16 @@ __metadata:
     react-native: ">=0.76"
   languageName: unknown
   linkType: soft
+
+"react-native-monorepo-config@npm:^0.1.7":
+  version: 0.1.7
+  resolution: "react-native-monorepo-config@npm:0.1.7"
+  dependencies:
+    escape-string-regexp: "npm:^5.0.0"
+    fast-glob: "npm:^3.3.3"
+  checksum: 10c0/7ec4ea8dbf2e8f6da1466953be7a6b0581b210f995a8018ed128bd8c962a83a6cfa31e1241e59f63df72ca6d021113b74132a4f342fbe437bbca5e88c2c97773
+  languageName: node
+  linkType: hard
 
 "react-native@npm:0.79.2":
   version: 0.79.2
