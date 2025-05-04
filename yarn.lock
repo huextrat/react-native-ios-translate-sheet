@@ -10435,9 +10435,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-builder-bob@npm:0.40.8":
-  version: 0.40.8
-  resolution: "react-native-builder-bob@npm:0.40.8"
+"react-native-builder-bob@npm:0.40.9":
+  version: 0.40.9
+  resolution: "react-native-builder-bob@npm:0.40.9"
   dependencies:
     "@babel/core": "npm:^7.25.2"
     "@babel/plugin-transform-flow-strip-types": "npm:^7.26.5"
@@ -10459,12 +10459,12 @@ __metadata:
     kleur: "npm:^4.1.4"
     metro-config: "npm:^0.80.9"
     prompts: "npm:^2.4.2"
-    react-native-monorepo-config: "npm:^0.1.7"
+    react-native-monorepo-config: "npm:^0.1.8"
     which: "npm:^2.0.2"
     yargs: "npm:^17.5.1"
   bin:
     bob: bin/bob
-  checksum: 10c0/a1a10c6e1b36470c517b0956a60876d433dcede3461fa7a715db06a3335d6993312c6ebed7001a522862d85bf63109c98d426a8f45bec8749a68dffb75f28d99
+  checksum: 10c0/5a3efffb5d41bc62de2d26c2fd0f5561c9362aca577a2bd300e74a90bb3595a77d6eba826d2892bf4d5f0b533153aa1895be22638adbf22b146e78371037bcc7
   languageName: node
   linkType: hard
 
@@ -10483,7 +10483,7 @@ __metadata:
     "@react-native/typescript-config": "npm:0.79.2"
     react: "npm:19.0.0"
     react-native: "npm:0.79.2"
-    react-native-builder-bob: "npm:0.40.8"
+    react-native-builder-bob: "npm:0.40.9"
   languageName: unknown
   linkType: soft
 
@@ -10504,7 +10504,7 @@ __metadata:
     jest: "npm:29.7.0"
     react: "npm:19.1.0"
     react-native: "npm:0.79.2"
-    react-native-builder-bob: "npm:0.40.8"
+    react-native-builder-bob: "npm:0.40.9"
     semantic-release: "npm:24.2.3"
     turbo: "npm:2.5.2"
     typescript: "npm:5.8.3"
@@ -10514,13 +10514,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"react-native-monorepo-config@npm:^0.1.7":
-  version: 0.1.7
-  resolution: "react-native-monorepo-config@npm:0.1.7"
+"react-native-monorepo-config@npm:^0.1.8":
+  version: 0.1.8
+  resolution: "react-native-monorepo-config@npm:0.1.8"
   dependencies:
     escape-string-regexp: "npm:^5.0.0"
     fast-glob: "npm:^3.3.3"
-  checksum: 10c0/7ec4ea8dbf2e8f6da1466953be7a6b0581b210f995a8018ed128bd8c962a83a6cfa31e1241e59f63df72ca6d021113b74132a4f342fbe437bbca5e88c2c97773
+  checksum: 10c0/def234c8875492a14593d977892ef94e2d95f8d55435fd561888d86571eade463f2c3236143e52c1639b6a50fc558245cc81d96ce56708d4192a13e0452b8a2a
   languageName: node
   linkType: hard
 
