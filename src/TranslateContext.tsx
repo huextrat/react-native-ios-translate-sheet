@@ -1,13 +1,13 @@
-import { type ReactNode, createContext, useContext } from "react";
+import { createContext, type ReactNode, useContext } from "react";
 import {
   type GestureResponderEvent,
   type NativeSyntheticEvent,
   StyleSheet,
 } from "react-native";
+import { useInternalTranslateSheet } from "./hooks/useInternalTranslate";
 import IOSTranslateSheet, {
   type OnReplacementActionEvent,
 } from "./IOSTranslateSheetViewNativeComponent";
-import { useInternalTranslateSheet } from "./hooks/useInternalTranslate";
 
 export type PresentIOSTranslateSheetParams = {
   text: string;
@@ -24,7 +24,9 @@ const TranslateContext = createContext<TranslateContextType | null>(null);
 
 export const IOSTranslateSheetProvider = ({
   children,
-}: { children: ReactNode }) => {
+}: {
+  children: ReactNode;
+}) => {
   const {
     presentIOSTranslateSheet,
     isIOSTranslateSheetPresented,

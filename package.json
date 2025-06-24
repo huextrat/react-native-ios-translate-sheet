@@ -28,11 +28,8 @@
   ],
   "scripts": {
     "example": "yarn workspace react-native-ios-translate-sheet-example",
-    "test": "jest",
-    "lint": "npx biome check ./src && npx biome format ./src && yarn lint:example",
-    "lint:example": "npx biome check ./example/src && npx biome format ./example/src",
-    "lint:fix": "npx biome lint --write ./src && npx biome format --write ./src && npx biome check --write ./src && yarn lint:fix:example",
-    "lint:fix:example": "npx biome lint --write ./example/src && npx biome format --write ./example/src && npx biome check --write ./example/src",
+    "lint": "npx biome check .",
+    "lint:fix": "npx biome check --write .",
     "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build lib",
     "prepare": "bob build",
     "release": "semantic-release"
@@ -63,12 +60,10 @@
     "@react-native-community/cli": "15.1.3",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
-    "@types/jest": "30.0.0",
     "@types/react": "19.1.8",
     "commitlint": "19.8.1",
     "del-cli": "6.0.0",
     "husky": "9.1.7",
-    "jest": "30.0.2",
     "react": "19.1.0",
     "react-native": "0.80.0",
     "react-native-builder-bob": "0.40.12",
@@ -87,13 +82,6 @@
     "example"
   ],
   "packageManager": "yarn@4.9.2",
-  "jest": {
-    "preset": "react-native",
-    "modulePathIgnorePatterns": [
-      "<rootDir>/example/node_modules",
-      "<rootDir>/lib/"
-    ]
-  },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
