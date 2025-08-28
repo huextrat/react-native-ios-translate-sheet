@@ -65,7 +65,7 @@
     "del-cli": "6.0.0",
     "husky": "9.1.7",
     "react": "19.1.0",
-    "react-native": "0.81.0",
+    "react-native": "0.81.1",
     "react-native-builder-bob": "0.40.13",
     "semantic-release": "24.2.7",
     "turbo": "2.5.6",
