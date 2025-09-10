@@ -7004,10 +7004,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hook-std@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "hook-std@npm:3.0.0"
-  checksum: 10c0/51841e049b130347acb59fb129253891d95e56e6fa268d0bcf95eaca5223f3ca2032b7f0af5feb0c0f61c8571f7af29339f185280ff28a624d3ebdcb6080540b
+"hook-std@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "hook-std@npm:4.0.0"
+  checksum: 10c0/d7358c5495d56a1ded58438b8d5c9bfa4896118c7734fb4ac5a5f823b5252ac219b334c0003113cbda12d024f6a178b00fd68bc4c4f756f6a5347b8be1cf814b
   languageName: node
   linkType: hard
 
@@ -10045,7 +10045,7 @@ __metadata:
     react: "npm:19.1.0"
     react-native: "npm:0.81.1"
     react-native-builder-bob: "npm:0.40.13"
-    semantic-release: "npm:24.2.7"
+    semantic-release: "npm:24.2.8"
     turbo: "npm:2.5.6"
     typescript: "npm:5.9.2"
   peerDependencies:
@@ -10442,9 +10442,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semantic-release@npm:24.2.7":
-  version: 24.2.7
-  resolution: "semantic-release@npm:24.2.7"
+"semantic-release@npm:24.2.8":
+  version: 24.2.8
+  resolution: "semantic-release@npm:24.2.8"
   dependencies:
     "@semantic-release/commit-analyzer": "npm:^13.0.0-beta.1"
     "@semantic-release/error": "npm:^4.0.0"
@@ -10460,7 +10460,7 @@ __metadata:
     find-versions: "npm:^6.0.0"
     get-stream: "npm:^6.0.0"
     git-log-parser: "npm:^1.2.0"
-    hook-std: "npm:^3.0.0"
+    hook-std: "npm:^4.0.0"
     hosted-git-info: "npm:^8.0.0"
     import-from-esm: "npm:^2.0.0"
     lodash-es: "npm:^4.17.21"
@@ -10477,7 +10477,7 @@ __metadata:
     yargs: "npm:^17.5.1"
   bin:
     semantic-release: bin/semantic-release.js
-  checksum: 10c0/d54a64a30a271dd578c84d3341a8f285646fc3ca9e4fad5a35a049a8cffb1b3eafaded5167e94ac62320d834471cb6a28e12e54169b8cf4c502b10b8f58967e6
+  checksum: 10c0/dd242d2e62d1ed0953f8c8514c3d33bc7717668454aeb2fa202a855c79a3d38015a676450baa9a169d56a69563714396d3747361d3d6c08bcebd799c3490791c
   languageName: node
   linkType: hard
 
