@@ -65,7 +65,7 @@
     "del-cli": "7.0.0",
     "husky": "9.1.7",
     "react": "19.1.0",
-    "react-native": "0.81.1",
+    "react-native": "0.82.1",
     "react-native-builder-bob": "0.40.15",
     "semantic-release": "25.0.2",
     "turbo": "2.6.1",
@@ -91,7 +91,6 @@
     "source": "src",
     "output": "lib",
     "targets": [
-      "codegen",
       "commonjs",
       "module",
       "typescript"
