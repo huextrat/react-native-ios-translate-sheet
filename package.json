@@ -91,7 +91,6 @@
     "source": "src",
     "output": "lib",
     "targets": [
-      "codegen",
       "commonjs",
       "module",
       "typescript"
