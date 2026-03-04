@@ -57,14 +57,14 @@
   "devDependencies": {
     "@biomejs/biome": "2.4.5",
     "@commitlint/config-conventional": "20.4.3",
-    "@react-native-community/cli": "15.1.3",
+    "@react-native-community/cli": "20.1.2",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "@types/react": "19.2.14",
     "commitlint": "20.4.3",
     "del-cli": "7.0.0",
     "husky": "9.1.7",
-    "react": "19.1.0",
+    "react": "19.2.4",
     "react-native": "0.84.1",
     "react-native-builder-bob": "0.40.18",
     "semantic-release": "25.0.3",
@@ -93,7 +93,8 @@
     "targets": [
       "commonjs",
       "module",
-      "typescript"
+      "typescript",
+      "codegen"
     ]
   },
   "codegenConfig": {
@@ -117,6 +118,6 @@
   "create-react-native-library": {
     "languages": "kotlin-objc",
     "type": "fabric-view",
-    "version": "0.48.3"
+    "version": "0.52.1"
   }
 }

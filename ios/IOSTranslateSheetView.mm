@@ -9,10 +9,10 @@
 #import "IOSTranslateSheet-Swift.h"
 #endif
 
-#import "generated/RNIOSTranslateSheetViewSpec/ComponentDescriptors.h"
-#import "generated/RNIOSTranslateSheetViewSpec/EventEmitters.h"
-#import "generated/RNIOSTranslateSheetViewSpec/Props.h"
-#import "generated/RNIOSTranslateSheetViewSpec/RCTComponentViewHelpers.h"
+#import "generated/ReactCodegen/RNIOSTranslateSheetViewSpec/ComponentDescriptors.h"
+#import "generated/ReactCodegen/RNIOSTranslateSheetViewSpec/EventEmitters.h"
+#import "generated/ReactCodegen/RNIOSTranslateSheetViewSpec/Props.h"
+#import "generated/ReactCodegen/RNIOSTranslateSheetViewSpec/RCTComponentViewHelpers.h"
 
 using namespace facebook::react;
 
