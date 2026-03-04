@@ -10544,7 +10544,7 @@ __metadata:
     "@react-native/babel-preset": "npm:0.84.1"
     "@react-native/metro-config": "npm:0.84.1"
     "@react-native/typescript-config": "npm:0.84.1"
-    react: "npm:19.2.3"
+    react: "npm:19.2.4"
     react-native: "npm:0.84.1"
     react-native-builder-bob: "npm:0.40.18"
   languageName: unknown
@@ -10640,13 +10640,6 @@ __metadata:
   version: 0.14.2
   resolution: "react-refresh@npm:0.14.2"
   checksum: 10c0/875b72ef56b147a131e33f2abd6ec059d1989854b3ff438898e4f9310bfcc73acff709445b7ba843318a953cb9424bcc2c05af2b3d80011cee28f25aef3e2ebb
-  languageName: node
-  linkType: hard
-
-"react@npm:19.2.3":
-  version: 19.2.3
-  resolution: "react@npm:19.2.3"
-  checksum: 10c0/094220b3ba3a76c1b668f972ace1dd15509b157aead1b40391d1c8e657e720c201d9719537375eff08f5e0514748c0319063392a6f000e31303aafc4471f1436
   languageName: node
   linkType: hard
 
