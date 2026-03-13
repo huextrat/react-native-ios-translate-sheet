@@ -56,7 +56,7 @@
     "provenance": true
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.6",
+    "@biomejs/biome": "2.4.7",
     "@commitlint/config-conventional": "20.4.4",
     "@react-native-community/cli": "20.1.2",
     "@semantic-release/changelog": "6.0.3",
