@@ -6,7 +6,7 @@
   "main": "lib/commonjs/index.js",
   "react-native": "src/index.tsx",
   "module": "lib/module/index.js",
-  "types": "lib/typescript/index.d.ts",
+  "types": "lib/typescript/src/index.d.ts",
   "files": [
     "src",
     "lib",
@@ -70,7 +70,7 @@
     "react-native-builder-bob": "0.40.18",
     "semantic-release": "25.0.3",
     "turbo": "2.8.20",
-    "typescript": "5.9.3"
+    "typescript": "6.0.2"
   },
   "resolutions": {
     "@types/react": "19.2.14"
