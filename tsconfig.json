@@ -1,12 +1,15 @@
 {
   "compilerOptions": {
+    "rootDir": ".",
+    "paths": {
+      "react-native-ios-translate-sheet": ["./src/index"]
+    },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
-    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react-jsx",
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
@@ -17,9 +20,7 @@
     "noUnusedParameters": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
-    "strict": true,
     "target": "ESNext",
     "verbatimModuleSyntax": true
-  },
-  "include": ["./src/"]
+  }
 }
