@@ -4232,44 +4232,44 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@turbo/darwin-64@npm:2.9.4":
-  version: 2.9.4
-  resolution: "@turbo/darwin-64@npm:2.9.4"
+"@turbo/darwin-64@npm:2.9.5":
+  version: 2.9.5
+  resolution: "@turbo/darwin-64@npm:2.9.5"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@turbo/darwin-arm64@npm:2.9.4":
-  version: 2.9.4
-  resolution: "@turbo/darwin-arm64@npm:2.9.4"
+"@turbo/darwin-arm64@npm:2.9.5":
+  version: 2.9.5
+  resolution: "@turbo/darwin-arm64@npm:2.9.5"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@turbo/linux-64@npm:2.9.4":
-  version: 2.9.4
-  resolution: "@turbo/linux-64@npm:2.9.4"
+"@turbo/linux-64@npm:2.9.5":
+  version: 2.9.5
+  resolution: "@turbo/linux-64@npm:2.9.5"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
-"@turbo/linux-arm64@npm:2.9.4":
-  version: 2.9.4
-  resolution: "@turbo/linux-arm64@npm:2.9.4"
+"@turbo/linux-arm64@npm:2.9.5":
+  version: 2.9.5
+  resolution: "@turbo/linux-arm64@npm:2.9.5"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
-"@turbo/windows-64@npm:2.9.4":
-  version: 2.9.4
-  resolution: "@turbo/windows-64@npm:2.9.4"
+"@turbo/windows-64@npm:2.9.5":
+  version: 2.9.5
+  resolution: "@turbo/windows-64@npm:2.9.5"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
-"@turbo/windows-arm64@npm:2.9.4":
-  version: 2.9.4
-  resolution: "@turbo/windows-arm64@npm:2.9.4"
+"@turbo/windows-arm64@npm:2.9.5":
+  version: 2.9.5
+  resolution: "@turbo/windows-arm64@npm:2.9.5"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
@@ -10169,7 +10169,7 @@ __metadata:
     react-native: "npm:0.84.1"
     react-native-builder-bob: "npm:0.41.0"
     semantic-release: "npm:25.0.3"
-    turbo: "npm:2.9.4"
+    turbo: "npm:2.9.5"
     typescript: "npm:6.0.2"
   peerDependencies:
     react: "*"
@@ -11534,16 +11534,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"turbo@npm:2.9.4":
-  version: 2.9.4
-  resolution: "turbo@npm:2.9.4"
+"turbo@npm:2.9.5":
+  version: 2.9.5
+  resolution: "turbo@npm:2.9.5"
   dependencies:
-    "@turbo/darwin-64": "npm:2.9.4"
-    "@turbo/darwin-arm64": "npm:2.9.4"
-    "@turbo/linux-64": "npm:2.9.4"
-    "@turbo/linux-arm64": "npm:2.9.4"
-    "@turbo/windows-64": "npm:2.9.4"
-    "@turbo/windows-arm64": "npm:2.9.4"
+    "@turbo/darwin-64": "npm:2.9.5"
+    "@turbo/darwin-arm64": "npm:2.9.5"
+    "@turbo/linux-64": "npm:2.9.5"
+    "@turbo/linux-arm64": "npm:2.9.5"
+    "@turbo/windows-64": "npm:2.9.5"
+    "@turbo/windows-arm64": "npm:2.9.5"
   dependenciesMeta:
     "@turbo/darwin-64":
       optional: true
@@ -11559,7 +11559,7 @@ __metadata:
       optional: true
   bin:
     turbo: bin/turbo
-  checksum: 10c0/a3c49374da8e2422dc4cddeec027716e62f2f8190489d8c40add2a337a236b7c06f06a1423198350c88cedecfcaacd097582a2f725b23b57432183ace8e47e74
+  checksum: 10c0/24719239927d8a662d2935c411965210618c40e5707c98699569186b525ad186cad1a22c5968e845f1b5a2ed7251c8f08a9a9dfe891f2e787042b8e951dc5482
   languageName: node
   linkType: hard
 
