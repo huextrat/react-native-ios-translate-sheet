@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.18](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.4.17...v1.4.18) (2026-06-13)
+
+
+### Bug Fixes
+
+* **deps:** update react monorepo ([#350](https://github.com/huextrat/react-native-ios-translate-sheet/issues/350)) ([1fea310](https://github.com/huextrat/react-native-ios-translate-sheet/commit/1fea31058ee18c25c5a03ec809a2997d6dee7099))
+
 ## [1.4.17](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.4.16...v1.4.17) (2026-05-06)
 
 
