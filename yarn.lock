@@ -4631,18 +4631,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native-community/cli-config-android@npm:20.1.3":
-  version: 20.1.3
-  resolution: "@react-native-community/cli-config-android@npm:20.1.3"
-  dependencies:
-    "@react-native-community/cli-tools": "npm:20.1.3"
-    fast-glob: "npm:^3.3.2"
-    fast-xml-parser: "npm:^5.3.6"
-    picocolors: "npm:^1.1.1"
-  checksum: 10c0/625aab78df3498f271b7718d4e4905bad6c3b88885d8e8fb3540a0976aff4f263d08bc8d7c6e6078bda7ff1eafe39f9469d63f50daa231eb32c4e010075fb6ee
-  languageName: node
-  linkType: hard
-
 "@react-native-community/cli-config-android@npm:20.2.0":
   version: 20.2.0
   resolution: "@react-native-community/cli-config-android@npm:20.2.0"
@@ -4713,19 +4701,6 @@ __metadata:
     wcwidth: "npm:^1.0.1"
     yaml: "npm:^2.2.1"
   checksum: 10c0/159e20b869ae7bc568f07f6d8c2e9a0559883a3f12b2f1ad5e5cc3c92e6138593d09a84dd894eeff3b2590cd8e8e9f1628c76e4ba0616afa61b4eb8827cfde40
-  languageName: node
-  linkType: hard
-
-"@react-native-community/cli-platform-android@npm:20.1.3":
-  version: 20.1.3
-  resolution: "@react-native-community/cli-platform-android@npm:20.1.3"
-  dependencies:
-    "@react-native-community/cli-config-android": "npm:20.1.3"
-    "@react-native-community/cli-tools": "npm:20.1.3"
-    execa: "npm:^5.0.0"
-    logkitty: "npm:^0.7.1"
-    picocolors: "npm:^1.1.1"
-  checksum: 10c0/c4e3640b41422a80d766ef66737b0fa62ace33d3d909ea0bc2a8d80e36b7a660c91fea83ec222d20422ee69a710693a6f9e996af5df3451aed2339d94bcb5d21
   languageName: node
   linkType: hard
 
@@ -11460,7 +11435,7 @@ __metadata:
     "@babel/preset-env": "npm:7.29.7"
     "@babel/runtime": "npm:7.29.7"
     "@react-native-community/cli": "npm:20.2.0"
-    "@react-native-community/cli-platform-android": "npm:20.1.3"
+    "@react-native-community/cli-platform-android": "npm:20.2.0"
     "@react-native-community/cli-platform-ios": "npm:20.1.3"
     "@react-native/babel-preset": "npm:0.86.0"
     "@react-native/metro-config": "npm:0.86.0"
