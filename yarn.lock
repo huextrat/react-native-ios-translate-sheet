@@ -11394,9 +11394,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-builder-bob@npm:0.42.1":
-  version: 0.42.1
-  resolution: "react-native-builder-bob@npm:0.42.1"
+"react-native-builder-bob@npm:0.43.0":
+  version: 0.43.0
+  resolution: "react-native-builder-bob@npm:0.43.0"
   dependencies:
     "@babel/core": "npm:^7.29.0"
     "@babel/plugin-transform-flow-strip-types": "npm:^7.27.1"
@@ -11417,13 +11417,12 @@ __metadata:
     json5: "npm:^2.2.3"
     kleur: "npm:^4.1.5"
     prompts: "npm:^2.4.2"
-    react-native-monorepo-config: "npm:^0.3.3"
     typescript: "npm:^6.0.3"
     which: "npm:^6.0.1"
     yargs: "npm:^18.0.0"
   bin:
     bob: bin/bob
-  checksum: 10c0/9d4eb9097eef8e204ffb1ab8c861e90c8b8b6bfc5f4cb86388d1015322fb205c3c8a08db19cd6803f2505ebba9311a7186949e2023f434d097c6e026e7fd013f
+  checksum: 10c0/b084598636b26bb6f1942c01b77d65d9bea09e148627c61bd9f79145ddb9ec947d7b004a718d14f3db2d4960d67c1e8c70fb0377864d6c3a572f611d489cb970
   languageName: node
   linkType: hard
 
@@ -11442,7 +11441,7 @@ __metadata:
     "@react-native/typescript-config": "npm:0.86.0"
     react: "npm:19.2.7"
     react-native: "npm:0.84.1"
-    react-native-builder-bob: "npm:0.42.1"
+    react-native-builder-bob: "npm:0.43.0"
   languageName: unknown
   linkType: soft
 
@@ -11461,7 +11460,7 @@ __metadata:
     husky: "npm:9.1.7"
     react: "npm:19.2.7"
     react-native: "npm:0.84.1"
-    react-native-builder-bob: "npm:0.42.1"
+    react-native-builder-bob: "npm:0.43.0"
     semantic-release: "npm:25.0.5"
     turbo: "npm:2.9.18"
     typescript: "npm:6.0.3"
@@ -11470,16 +11469,6 @@ __metadata:
     react-native: ">=0.76"
   languageName: unknown
   linkType: soft
-
-"react-native-monorepo-config@npm:^0.3.3":
-  version: 0.3.3
-  resolution: "react-native-monorepo-config@npm:0.3.3"
-  dependencies:
-    escape-string-regexp: "npm:^5.0.0"
-    fast-glob: "npm:^3.3.3"
-  checksum: 10c0/42dd8de1bb976c794fe1124ab08fba4645f189c7bdbdcd24dc0e05b639591e690891f89e5dba33c57691840365af85b48004c29c1c128ff195a95e766bb9752e
-  languageName: node
-  linkType: hard
 
 "react-native@npm:0.84.1":
   version: 0.84.1
