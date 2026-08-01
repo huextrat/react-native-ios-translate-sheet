@@ -61,7 +61,7 @@
     "@react-native-community/cli": "20.2.0",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
-    "@types/react": "19.2.17",
+    "@types/react": "19.2.18",
     "commitlint": "20.5.3",
     "del-cli": "7.0.0",
     "husky": "9.1.7",
@@ -73,7 +73,7 @@
     "typescript": "6.0.3"
   },
   "resolutions": {
-    "@types/react": "19.2.17"
+    "@types/react": "19.2.18"
   },
   "peerDependencies": {
     "react": "*",
