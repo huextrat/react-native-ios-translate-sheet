@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.20](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.4.19...v1.4.20) (2026-08-05)
+
+
+### Bug Fixes
+
+* release ([2b99615](https://github.com/huextrat/react-native-ios-translate-sheet/commit/2b9961570d30d2647e06668a37130eb0bcb97628))
+
 ## [1.4.19](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.4.18...v1.4.19) (2026-07-25)
 
 
