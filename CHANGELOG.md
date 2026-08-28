@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.22](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.4.21...v1.4.22) (2026-08-28)
+
+
+### Bug Fixes
+
+* patch release ([27ac82d](https://github.com/huextrat/react-native-ios-translate-sheet/commit/27ac82d8445ad12c7eab4688671d9422e6810025))
+
 ## [1.4.21](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.4.20...v1.4.21) (2026-08-05)
 
 
