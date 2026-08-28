@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.5.0](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.4.22...v1.5.0) (2026-08-28)
+
+
+### Features
+
+* update project dependencies and React Native 0.87 ([#402](https://github.com/huextrat/react-native-ios-translate-sheet/issues/402)) ([b70b072](https://github.com/huextrat/react-native-ios-translate-sheet/commit/b70b07295f3019d769a0cf5c8f26605ac7afb290))
+
 ## [1.4.22](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.4.21...v1.4.22) (2026-08-28)
 
 
