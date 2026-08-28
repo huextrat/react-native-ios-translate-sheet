@@ -1,11 +1,25 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended"],
-  "enabledManagers": ["npm", "github-actions"],
+  "extends": ["config:best-practices", ":automergeStableNonMajor"],
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch"],
-      "automerge": true
+      "description": "Group React Native ecosystem updates for manual review",
+      "groupName": "React Native ecosystem",
+      "matchPackageNames": [
+        "react",
+        "react-native",
+        "@types/react",
+        "@react-native/**",
+        "@react-native-community/**",
+        "react-native-builder-bob",
+        "react-native-monorepo-config"
+      ],
+      "automerge": false
+    },
+    {
+      "description": "Require manual review for native dependency updates",
+      "matchManagers": ["bundler", "cocoapods", "gradle", "gradle-wrapper"],
+      "automerge": false
     }
   ]
 }
