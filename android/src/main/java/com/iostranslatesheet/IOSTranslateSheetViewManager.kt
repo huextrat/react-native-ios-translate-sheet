@@ -38,7 +38,22 @@ class IOSTranslateSheetViewManager : SimpleViewManager<IOSTranslateSheetView>(),
   @ReactProp(name = "isPresented")
   override fun setIsPresented(view: IOSTranslateSheetView, isPresented: Boolean) {
     // No-op implementation since this is iOS-only
-  }  
+  }
+
+  @ReactProp(name = "hasReplacementAction")
+  override fun setHasReplacementAction(view: IOSTranslateSheetView, value: Boolean) {
+    // No-op implementation since this is iOS-only
+  }
+
+  @ReactProp(name = "translateAnchorPointX")
+  override fun setTranslateAnchorPointX(view: IOSTranslateSheetView, value: Double) {
+    // No-op implementation since this is iOS-only
+  }
+
+  @ReactProp(name = "translateAnchorPointY")
+  override fun setTranslateAnchorPointY(view: IOSTranslateSheetView, value: Double) {
+    // No-op implementation since this is iOS-only
+  }
 
   companion object {
     const val NAME = "IOSTranslateSheetView"
