@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.5.0...v1.5.1) (2026-09-07)
+
+
+### Bug Fixes
+
+* **android:** skip explicit Kotlin plugin when AGP registers the kotlin extension ([#418](https://github.com/huextrat/react-native-ios-translate-sheet/issues/418)) ([e6281bd](https://github.com/huextrat/react-native-ios-translate-sheet/commit/e6281bdf5b860216e6cb010321b7fba68c71cf5c))
+
 # [1.5.0](https://github.com/huextrat/react-native-ios-translate-sheet/compare/v1.4.22...v1.5.0) (2026-08-28)
 
 
