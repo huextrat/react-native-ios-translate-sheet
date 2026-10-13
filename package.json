@@ -63,7 +63,7 @@
     "@semantic-release/git": "11.0.1",
     "@types/react": "19.2.18",
     "commitlint": "21.2.3",
-    "del-cli": "7.0.0",
+    "del-cli": "8.0.1",
     "husky": "9.1.7",
     "react": "19.2.8",
     "react-native": "0.87.1",
